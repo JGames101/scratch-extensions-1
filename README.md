@@ -9,4 +9,4 @@ Also check out [Ext Open](https://github.com/savaka2/ext-open)
 
 To see everyone's extensions, go to the [Scratch Extensions Directory](http://savaka2.github.io/scratch-extensions-directory/).
 
-## [View extension links here!](http://savaka2.github.io/scratch-extensions-directory/index.html?searchname=savaka)
+## [View extension links here!](http://savaka2.github.io/scratch-extensions-directory/index.html?scratch-extensions)
