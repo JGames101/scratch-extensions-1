@@ -2,9 +2,9 @@
 	var ext = this;
 	var descriptor = {
 		blocks: [
-			['b', '%n ≤ %n', 'loe'],
-			['b', '%n ≠ %n', 'net'],
-			['b', '%n ≥ %n', 'goe'],
+			['b', '%n ≤ %n', 'loe', 10],
+			['b', '%n ≠ %n', 'net', 10],
+			['b', '%n ≥ %n', 'goe', 10],
 			['r', '%n ^ %n', 'exponent', 10],
 			['r', '%n √ %n', 'nthroot', 10],
 			['r', 'π', 'pi', ''],
@@ -13,7 +13,7 @@
 			['r', '%n ° to radians', 'degrad', 10],
 			['r', '%n r to degrees', 'raddeg', 10],
 			['r', '%m.functions of %n', 'advanced', 'csc'],
-			['b', 'is %n prime?', 'prime'],
+			['b', 'is %n prime?', 'prime', 10],
 			['r', '%n ° %n \' %n "', 'dms', 10],
 			['r', '%n%', 'percent', 10],
 			['r', 'round %n %m.roundmode %n', 'roundplaces', 10, 'to the nearest'],

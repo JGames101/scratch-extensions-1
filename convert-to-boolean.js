@@ -3,8 +3,8 @@ new (function() {
 	var descriptor = {
 		blocks: [
 			['b', '%s as boolean', 'asboolean', 'false'],
-			['b', 'false', 'bfalse'],
-			['b', 'true', 'btrue']
+			['b', 'false', 'bfalse', ''],
+			['b', 'true', 'btrue', '']
 		],
 		url : 'https://github.com/savaka2/scratch-extensions/wiki/Convert-to-Boolean-extension'
 	};
