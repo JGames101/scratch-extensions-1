@@ -6,7 +6,7 @@ new (function() {
 		],
 		menus: {
 			cors: ['no cors proxy', 'use cors proxy'],
-			cachebuster: ['no cache buster', 'start query string', 'continue query string']
+			cachebuster: ['no cache buster', 'add random query string']
 		},
 		url: 'https://github.com/savaka2/scratch-extensions/wiki/Most-Purpose-API-Extension'
 	};
@@ -22,10 +22,12 @@ new (function() {
 		if (cors == 'use cors proxy') {
 			url = 'https://crossorigin.me/' + url;
 		}
-		if (cb == 'continue query string') {
-			url += '&' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
-		} else if (cb == 'start query string') {
-			url += '?' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
+		if (cb == 'use random query string') {
+			if (inurl.indexOf('?') != -1) {
+				url += '&' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
+			} else {
+				url += '?' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
+			}
 		}
 		var r = new XMLHttpRequest();
 		r.addEventListener('load', function() {
