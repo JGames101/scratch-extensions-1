@@ -22,7 +22,7 @@ new (function() {
 		if (cors == 'use cors proxy') {
 			url = 'https://crossorigin.me/' + url;
 		}
-		if (cb == 'use random query string') {
+		if (cb == 'add random query string') {
 			if (inurl.indexOf('?') != -1) {
 				url += '&' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
 			} else {
