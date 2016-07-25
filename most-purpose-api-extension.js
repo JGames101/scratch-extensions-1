@@ -24,9 +24,9 @@ new (function() {
 		}
 		if (cb == 'add random query string') {
 			if (inurl.indexOf('?') != -1) {
-				url += '&' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
+				url += '&randomstuff=' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
 			} else {
-				url += '?' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
+				url += '?randomstuff=' + Math.floor(Math.random() * 10000) + Number(new Date()).toString();
 			}
 		}
 		var r = new XMLHttpRequest();
