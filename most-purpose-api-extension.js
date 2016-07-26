@@ -2,7 +2,8 @@ new (function() {
 	var ext = this;
 	var descriptor = {
 		blocks: [
-			['R', 'get %s , %m.cors , %m.cachebuster', 'get', 'https://api.scratch.mit.edu/users/mres', 'no cors proxy', 'add random query string']
+			['R', 'get %s , %m.cors , %m.cachebuster', 'get', 'https://api.scratch.mit.edu/users/mres', 'no cors proxy', 'add random query string'],
+			['r', 'json %s %s', 'thingy', '', '.id']
 		],
 		menus: {
 			cors: ['no cors proxy', 'use cors proxy'],
@@ -41,6 +42,11 @@ new (function() {
 		r.open('get', url, true);
 		r.send();
 	} // Credit to Zatnik
+	
+	ext.get = function(s, dot) {
+		var obj = JSON.parse(s);
+		return eval('obj' + dot);
+	}
 	
 	ScratchExtensions.register('Most Purpose API Extension', descriptor, ext);
 })();
