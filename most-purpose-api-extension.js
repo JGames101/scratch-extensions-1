@@ -17,7 +17,7 @@ new (function() {
 		return {status:2, msg:'Ready'};
 	};
 	
-	ext.userid = function(inurl, cors, cb, callback) {
+	ext.get = function(inurl, cors, cb, callback) {
 		var url = inurl;
 		if (cors == 'use cors proxy') {
 			url = 'https://crossorigin.me/' + url;
