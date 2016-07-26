@@ -43,7 +43,7 @@ new (function() {
 		r.send();
 	} // Credit to Zatnik
 	
-	ext.get = function(s, dot) {
+	ext.thingy = function(s, dot) {
 		var obj = JSON.parse(s);
 		return eval('obj' + dot);
 	}
