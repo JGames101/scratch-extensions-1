@@ -3,7 +3,7 @@ new (function() {
 	var descriptor = {
 		blocks: [
 			[' ', 'comment: %s', 'comment'],
-			['c', 'comment out: %s', 'commentc']
+			['c', 'comment out: %s', 'commentc'],
 			[' ', 'print %s to web console', 'debug']
 		],
 		url : 'https://github.com/savaka2/scratch-extensions/wiki/Debugging-extension'
