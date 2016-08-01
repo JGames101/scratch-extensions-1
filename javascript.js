@@ -4,7 +4,7 @@ new (function() {
 		blocks: [
 			['r', 'evaluate JavaScript %s', 'evaluate', '']
 		],
-		url : 'https://github.com/savaka2/scratch-extensions/wiki/JavaScript-extension'
+		url : 'https://github.com/savaka2/scratch-extensions/wiki/JavaScript'
 	};
 	
 	ext._shutdown = function() {

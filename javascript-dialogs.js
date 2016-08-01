@@ -8,7 +8,7 @@ new (function() {
 			['w', 'prompt %s and wait with default text %s', 'promptBlock', 'What\'s your name?', ''],
 			['r', 'prompt answer', 'promptReporter']
 		],
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/JavaScript-Dialogs-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/JavaScript-Dialogs'
 	};
 	
 	ext.confirmR = false;

@@ -11,7 +11,7 @@
 			unary: ['F', 'p', '¬p', 'T'],
 			binary: ['F', 'NOR', 'Xq', '¬p', '↛', '¬q', 'XOR', 'NAND', 'AND', 'XNOR', 'q', 'if/then', 'p', 'then/if', 'OR', 'T']
 		},
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/Logic-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/Logic'
 	};
 	
 	ext._shutdown = function() {};

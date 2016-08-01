@@ -6,7 +6,7 @@ new (function() {
 			['b', 'false', 'bfalse', ''],
 			['b', 'true', 'btrue', '']
 		],
-		url : 'https://github.com/savaka2/scratch-extensions/wiki/Convert-to-Boolean-extension'
+		url : 'https://github.com/savaka2/scratch-extensions/wiki/Convert-to-Boolean'
 	};
 	
 	ext._shutdown = function() {
