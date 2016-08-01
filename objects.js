@@ -8,7 +8,7 @@ new (function() {
 			[' ', 'delete property %s of object %s', 'del'],
 			['r', '%s of object %s', 'get', '']
 		],
-		url : 'https://github.com/savaka2/scratch-extensions/wiki/Objects-extension'
+		url : 'https://github.com/savaka2/scratch-extensions/wiki/Objects'
 	};
 	
 	ext.objobj = {};

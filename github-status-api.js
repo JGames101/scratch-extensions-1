@@ -12,7 +12,7 @@ new (function() {
 			apilastmessage: ['status', 'text', 'timestamp'],
 			timestuff: ['year', 'month', 'date', 'hour', 'minute', 'second']
 		},
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/GitHub-Status-API-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/GitHub-Status-API'
 	};
 	
 	ext._shutdown = function() {};

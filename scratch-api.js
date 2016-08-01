@@ -12,7 +12,7 @@ new (function() {
 			profilestuff: ['About', 'Country', 'What I\'m working on'],
 			timestuff: ['year', 'month', 'date', 'hour', 'minute', 'second']
 		},
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/Scratch-API-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/Scratch-API'
 	};
 	
 	ext._shutdown = function() {};

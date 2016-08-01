@@ -7,7 +7,7 @@ new (function() {
 			['-'],
 			[' ', 'print %s to web console', 'debug']
 		],
-		url : 'https://github.com/savaka2/scratch-extensions/wiki/Debugging-extension'
+		url : 'https://github.com/savaka2/scratch-extensions/wiki/Debugging'
 	};
 	
 	ext._shutdown = function() {

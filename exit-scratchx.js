@@ -4,7 +4,7 @@ new (function() {
 		blocks: [
 			[' ', 'exit scratchx', 'exit']
 		],
-		url : 'https://github.com/savaka2/scratch-extensions/wiki/Exit-ScratchX-extension'
+		url : 'https://github.com/savaka2/scratch-extensions/wiki/Exit-ScratchX'
 	};
 	
 	ext._shutdown = function() {};

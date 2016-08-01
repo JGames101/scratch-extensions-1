@@ -38,7 +38,7 @@
 			parts: ['integer', 'fractional'],
 			iden: ['1', '2']
 		},
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/More-Math-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/More-Math'
 	};
 	
 	ext.store = 0;

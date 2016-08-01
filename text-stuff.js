@@ -9,7 +9,7 @@ new (function() {
 			['b', '%s is a palindrome?','palindrome', 'yay'],
 			['r', 'words in %s', 'wordcount', 'hello world']
 		],
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/Text-Stuff-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/Text-Stuff'
 	};
 	
 	ext._shutdown = function() {};

@@ -30,7 +30,7 @@ new (function() {
 			amount: ['no', 'some', 'all'],
 			sets: ['lowercase letters', 'uppercase letters'],
 		},
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/More-Operators-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/More-Operators'
 	};
 	
 	ext._shutdown = function() {};

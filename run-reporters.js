@@ -4,7 +4,7 @@ new (function() {
 		blocks: [
 			[' ', 'run %s', 'do']
 		],
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/Run-Reporters-extension'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/Run-Reporters'
 	};
 	
 	ext._shutdown = function() {
