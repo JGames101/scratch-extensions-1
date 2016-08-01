@@ -3,7 +3,8 @@ new (function() {
 	var descriptor = {
 		blocks: [
 			['R', 'get %s , %m.cors , %m.cachebuster', 'get', 'https://api.scratch.mit.edu/users/mres', 'no cors proxy', 'add random query string'],
-			['R', 'json %s [ %s ]', 'thingy', '', '"id"']
+			['R', '%s [ %s ]', 'thingy', '', 'id'],
+			['R', '%s [ %n ]', 'nthingy', '', 0]
 		],
 		menus: {
 			cors: ['no cors proxy', 'use cors proxy'],
@@ -47,7 +48,13 @@ new (function() {
 	
 	ext.thingy = function(s, br, callback) {
 		var obj = JSON.parse(s);
-		var p = eval('obj[' + br + ']');
+		var p = obj[br];
+		callback(JSON.stringify(p));
+	}
+	
+	ext.nthingy = function(s, br, callback) {
+		var obj = JSON.parse(s);
+		var p = obj[br];
 		callback(JSON.stringify(p));
 	}
 	
