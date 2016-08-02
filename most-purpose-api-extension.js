@@ -51,6 +51,7 @@ new (function() {
 		while (t.indexOf('\\n') != -1) {
 			t = t.replace('\\n', '\\\\n');
 		}
+		console.log(t);
 		var obj = JSON.parse(t);
 		var p = obj[br];
 		return JSON.stringify(p);
