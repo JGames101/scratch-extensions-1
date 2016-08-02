@@ -47,9 +47,10 @@ new (function() {
 	} // Credit to Zatnik
 	
 	ext.thingy = function(s, br) {
+		console.log(s);
 		var t = s;
-		while (t.indexOf('\\n') != -1) {
-			t = t.replace('\\n', '\\\\n');
+		while (t.indexOf('\n') != -1) {
+			t = t.replace('\n', '\\n');
 		}
 		console.log(t);
 		var obj = JSON.parse(t);
