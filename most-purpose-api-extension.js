@@ -60,8 +60,8 @@ new (function() {
 	
 	ext.nthingy = function(s, br) {
 		var t = s;
-		while (t.indexOf('\\n') != -1) {
-			t = t.replace('\\n', '\\\\n');
+		while (t.indexOf('\n') != -1) {
+			t = t.replace('\n', '\\n');
 		}
 		var obj = JSON.parse(t);
 		var p = obj[br];
