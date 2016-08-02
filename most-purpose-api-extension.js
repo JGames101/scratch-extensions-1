@@ -4,7 +4,8 @@ new (function() {
 		blocks: [
 			['R', 'get %s , %m.cors , %m.cachebuster', 'get', 'https://api.scratch.mit.edu/users/mres', 'no cors proxy', 'add random query string'],
 			['r', '%s [ %s ]', 'thingy', '', 'id'],
-			['r', '%s [ %n ]', 'nthingy', '', 0]
+			['r', '%s [ %n ]', 'nthingy', '', 0],
+			['r', 'parse %s', 'parse', '']
 		],
 		menus: {
 			cors: ['no cors proxy', 'use cors proxy'],
@@ -64,6 +65,14 @@ new (function() {
 		var obj = JSON.parse(t);
 		var p = obj[br];
 		return JSON.stringify(p);
+	}
+	
+	ext.parse = function(s) {
+		var t = s;
+		while (t.indexOf('\n') != -1) {
+			t = t.replace('\n', '\\n');
+		}
+		return JSON.parse(t);
 	}
 	
 	ScratchExtensions.register('Most Purpose API Extension', descriptor, ext);
