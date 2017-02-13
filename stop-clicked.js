@@ -2,9 +2,9 @@ new (function() {
 	var ext = this;	
 	var descriptor = {
 		blocks: [
-			['h', 'when stop sign clicked', 'stopclicked']
+			['h', 'when either stage button clicked', 'stopclicked']
 		],
-		url: 'https://github.com/savaka2/scratch-extensions/wiki/When-Stop-Clicked'
+		url: 'https://github.com/savaka2/scratch-extensions/wiki/Stop-Clicked'
 	};
 	
 	var stopped = false;
@@ -28,5 +28,5 @@ new (function() {
 		return {status:2, msg:'Ready'};
 	};
 	
-	ScratchExtensions.register('When Stop Clicked', descriptor, ext);
+	ScratchExtensions.register('Stop Clicked', descriptor, ext);
 })();
