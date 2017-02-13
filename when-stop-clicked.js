@@ -2,7 +2,7 @@ new (function() {
 	var ext = this;	
 	var descriptor = {
 		blocks: [
-			['h', 'when stop sign clicked', 'stop-clicked']
+			['h', 'when stop sign clicked', 'stopclicked']
 		],
 		url: 'https://github.com/savaka2/scratch-extensions/wiki/When-Stop-Clicked'
 	};
@@ -17,7 +17,7 @@ new (function() {
 		stopped = true;
 	};
 	
-	ext.stop-clicked = function() {
+	ext.stopclicked = function() {
 		if (stopped) {
 			stopped = false;
 			return true;
