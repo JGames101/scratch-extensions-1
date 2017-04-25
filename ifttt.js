@@ -5,7 +5,7 @@ new (function() {
 			[' ', 'set maker key to %s', 'setKey'],
 			[' ', 'trigger event %s', 'trigger', 'button_pressed'],
 			[' ', 'trigger event %s with values %s %s %s', 'triggerValues', 'button_pressed'],
-			['r', 'encode URI %s', 'encode']
+			['r', 'encode URI %s', 'encode', '']
 		],
 		url: 'https://github.com/savaka2/scratch-extensions/wiki/IFTTT'
 	};
