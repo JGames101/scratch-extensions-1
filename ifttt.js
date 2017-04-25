@@ -38,7 +38,7 @@ new (function() {
 			alert('Please specify your key using the "set maker key to []" block');
 		} else {
 			var xhttp = new XMLHttpRequest();
-			xhttp.open('GET', 'https://maker.ifttt.com/trigger/' + t + '/with/key/' + ext.key);
+			xhttp.open('GET', 'https://maker.ifttt.com/trigger/' + t + '/with/key/' + ext.key + '?value1=' + v1 + '?value2=' + v2 + '?value3=' + v3);
 			xhttp.send();
 		}
 	};
