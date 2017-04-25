@@ -3,14 +3,16 @@ new (function() {
 	var descriptor = {
 		blocks: [
 			[' ', 'set maker key to %s', 'setKey'],
-			[' ', 'trigger event %s', 'trigger', 'button_pressed'],
-			[' ', 'trigger event %s with values %s %s %s', 'triggerValues', 'button_pressed'],
+			[' ', 'trigger event %s', 'trigger'],
+			[' ', 'trigger event %s with values %s %s %s', 'triggerValues'],
+			['-'],
 			['r', 'encode URI %s', 'encode', '']
 		],
 		url: 'https://github.com/savaka2/scratch-extensions/wiki/IFTTT'
 	};
 	
 	ext.key = '{key}';
+	ext.keyGiven = false;
 	
 	ext._shutdown = function() {
 		
@@ -21,6 +23,7 @@ new (function() {
 	};
 	ext.setKey = function(s) {
 		ext.key = s;
+		ext.keyGiven = true;
 	};
 	
 	ext.trigger = function(t) {
@@ -34,7 +37,7 @@ new (function() {
 	};
 	
 	ext.triggerValues = function(t, v1, v2, v3) {
-		if (ext.key == '{key}') {
+		if (!ext.keyGiven) {
 			alert('Please specify your key using the "set maker key to []" block');
 		} else {
 			var xhttp = new XMLHttpRequest();
