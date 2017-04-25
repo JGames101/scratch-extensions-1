@@ -34,7 +34,7 @@ new (function() {
 	};
 	
 	ext.triggerValues = function(t, v1, v2, v3) {
-		if (ext.key = '{key}') {
+		if (ext.key == '{key}') {
 			alert('Please specify your key using the "set maker key to []" block');
 		} else {
 			var xhttp = new XMLHttpRequest();
